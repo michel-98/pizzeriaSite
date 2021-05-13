@@ -1,0 +1,40 @@
+{
+    "ita": {
+        "info": "INFO",
+        "lingueTit":"Lingue",
+        "italian":"Italiano",
+        "english": "inglese",
+        "frameLib": "Frameworks / Librerie",
+        "proLang": "Linguaggi di programmazione",
+        "knowledgeBase":"Ho anche conoscenza base in:",
+        "about": "Chi siamo",
+        "pres1":"Ciao, sono Michele, un giovane ragazzo pugliese. ",
+        "pres2":"Attualmente lavoro presso Dxc Technology come sviluppatore di applicazioni Web. Lo stack tecnologico che uso di solito è Angular (FE) e Java (BE). Ho lavorato su molti progetti per aziende della pubblica amministrazione italiana come Infocamere, Istituto Luce, Invitalia...",
+        "pres3": "Ho iniziato a lavorare nel 2019, durante l'inizio del mio terzo anno di università, per Links Management & Technology, ma sempre su progetti gestiti dall'azienda DXC Technology, infatti dopo un anno ho effettuato il passaggio tra queste due aziende.",
+        "pres4": "Ho lavorato in alcuni altri ruoli, come analista o Team leader per priccoli progetti.",
+        "educ": "Istruzione",
+        "diploma":"Diploma scientifico",
+        "certificato": "Certificato di Web Appplication Engineer",
+        "laurea":"Dottore in Informatica",
+        "work":"Lavoro"
+    },
+    "eng": {
+        "info": "INFO",
+        "lingueTit":"Languages",
+        "italian":"Italian",
+        "english": "English",
+        "frameLib": "Frameworks / Libraries",
+        "proLang": "Programming languages",
+        "knowledgeBase":"I've also base knoledge in",
+        "about": "About me",
+        "pres1":"Hi, I'm Michele, a young guy from Southern Italy. ",
+        "pres2":"I'm currently workin for Dxc Technology as a Web Application developer. I usally work with Angular (FE) and Java (BE). I worked in many projects for italian public administration companies such as Infocamere, Istituto Luce, Invitalia...",
+        "pres3": "I started working in 2019 for Links Management & Technology but on DXC Technology projects, so after an year I made the transition between this two companies.",
+        "pres4": "I worked in many other roles like Analyst and Team leader for little projects.",
+        "educ": "Education",
+        "diploma":"Scientific diploma",
+        "certificato": "Web Appplication Engineer Certificate",
+        "laurea":"Graduated in Computer Science",
+        "work":"Work"
+    }
+}

@@ -1,0 +1,68 @@
+
+
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 2;
+  color: var(--primaryColMic)
+}
+
+.langBtn{
+  min-width:30px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 36px;
+  margin-right: 50px;
+  z-index: 2;
+  background-color:var(--primaryColMic);
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: -20px;
+  margin-bottom: -43px;
+}
+
+.openbtn {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  font-size: 36px;
+  margin-right: 50px;
+  z-index: 2;
+  color: var(--primaryColMic)
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 50px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: var(--primaryColMic);
+  /* Set a background color */
+  color: var(--secondaryColMic);
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  height: 40px;
+  width: 40px;
+}
+
+

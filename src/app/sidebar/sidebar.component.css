@@ -1,0 +1,118 @@
+
+.profile {
+  display: inline-flex;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: url("./../../assets/photo.jpeg");
+  background-position: -19px;
+  background-size: 122%;
+  border: 3px solid red;
+}
+
+button.btn-none {
+  width: 100%;
+  color: var(--secondaryColMic);
+  background-color: initial !important;
+  border: none;
+}
+
+button.btn-none:hover {
+  text-decoration: underline;
+}
+
+.toCenter {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toLeft {
+  width: auto;
+  text-align: left;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.contact-box> {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.contact-box i {
+  font-size: 1.3em;
+}
+
+.contact-box .text {
+  display: inline-flex;
+  word-break: break-all;
+}
+
+a[href].text {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a[href].text.link {
+  color: var(--secondaryColMic);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a[href].text.link:hover {
+  /* color: black; */
+  text-decoration: underline;
+}
+
+a[href].text:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.progresso .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #313131;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+.progresso .dot.active {
+  background-color: var(--primaryColMic);
+}
+
+.skill {
+  display: flex;
+}
+
+.skill span {
+  min-width: 90px;
+  ;
+}
+
+@media (min-width: 8px) and (max-width: 768px) {
+  .toLeft {
+    margin-left: 0.7rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .toLeft {
+    margin-left: 1.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .toLeft {
+    margin-left: 3rem !important;
+  }
+}

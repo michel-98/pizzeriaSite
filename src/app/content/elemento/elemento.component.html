@@ -1,0 +1,21 @@
+<figure class='pizza'>
+    <div class="pizza__content">
+      <div class="pizza__title">
+        <h1 class="pizza__heading">{{elemento.elemento}}</h1>
+    
+      </div>
+      <p class="pizza__description" *ngIf="elemento.ingredienti.length">
+         {{joinArray(elemento.ingredienti)}}
+    </p>
+      <div class="pizza__details">
+        <p class="pizza__detail"><span class="emoji">💶</span> {{elemento.moneta}}{{elemento.prezzo}}</p>
+        <div *ngFor="let attributo of elemento.attributi, index as i">
+            <div class="pizza__tag" [class]="'pizza__tag--'+ i">
+                {{attributo}}
+             </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  </figure>

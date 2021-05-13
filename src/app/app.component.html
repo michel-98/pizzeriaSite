@@ -1,0 +1,35 @@
+<div id="container" (mouseover)="checkHeight()">
+  
+  <div id="myContent" #myContent>
+    <app-content></app-content>
+  </div>
+  <!-- <div id="mySideNav" #mySideNav>
+    <app-sidebar></app-sidebar>
+  </div> -->
+</div>
+<div id="mySideNav" #mySideNav>
+  <app-sidebar></app-sidebar>
+</div>
+<!-- <span class="d-block closebtn clickable" *ngIf="!closed" (click)="closeNav()">&times;</span>
+ <div class="clickable langBtn" (click)="changeLang()" title="Change language">
+  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" 
+  style="margin-bottom: -10px;" viewBox="0 0 512 512" *ngIf="linguaSer.getLingua() === LINGUE.italiano">
+    <g fill-rule="evenodd" stroke-width="1pt">
+      <path fill="#fff" d="M0 0h512v512H0z" />
+      <path fill="#009246" d="M0 0h170.7v512H0z" />
+      <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+    </g>
+  </svg>
+ 
+  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb"  *ngIf="linguaSer.getLingua() === LINGUE.inglese"
+  style="margin-bottom: -10px;"  viewBox="0 0 512 512">
+    <path fill="#012169" d="M0 0h512v512H0z"/>
+    <path fill="#FFF" d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z"/>
+    <path fill="#C8102E" d="M184 324l11 34L42 512H0v-3l184-185zm124-12l54 8 150 147v45L308 312zM512 0L320 196l-4-44L466 0h46zM0 1l193 189-59-8L0 49V1z"/>
+    <path fill="#FFF" d="M176 0v512h160V0H176zM0 176v160h512V176H0z"/>
+    <path fill="#C8102E" d="M0 208v96h512v-96H0zM208 0v512h96V0h-96z"/>
+  </svg>
+</div> 
+<span class="d-flex closebtn clickable" *ngIf="closed" (click)="openNav()"> <h2 class="pt-2"
+  style="margin-bottom:0px"> {{linguaSer.getFile().info}}</h2>&nbsp;&#9776;</span> -->
+<button (click)="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>

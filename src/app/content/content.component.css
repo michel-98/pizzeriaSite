@@ -1,0 +1,140 @@
+.headTitle {
+  color: var(--textPrimary);
+}
+
+.profile {
+  display: inline-flex;
+  margin-bottom: 5px;
+  margin-left: -15px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: url("./../../assets/photo.jpeg");
+  background-position:  -19px;
+  background-size: 122%;
+  border: 3px solid red;
+}
+
+.toCenter {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headTitle h1 {
+  font-size: 4rem !important;
+  font-weight: 400 !important;
+}
+
+.zone-2 {
+  padding: 0 20px;
+  padding-right: 75px;
+  color: lighten(#9c9c9a, 10%);
+}
+
+.subTitle h2 {
+  font-weight: 400 !important;
+}
+
+.box {
+  display: inline-block;
+  padding: 2px 70px 2px 20px;
+  margin-left: -20px;
+  margin-top: 35px;
+  background: var(--primaryColMic);
+  color: var(--secondaryColMic);
+}
+
+.box-menu{
+  width: 100%;
+  display: inline-block;
+  padding: 2px 70px 2px 20px;
+  margin-left: -20px;
+  margin-top: 35px;
+  background: var(--primaryColMic);
+  color: var(--secondaryColMic);
+}
+.group-1 .desc {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.group-3 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.group-3 .desc ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.group-3 .desc ul:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 17px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primaryColMic);
+}
+.group-3 .desc ul li {
+    list-style-type: none;
+    position: relative;
+}
+.group-3 .desc ul li:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -18px;
+    height: 100px;
+    border-left: 2px solid var(--primaryColMic);
+}
+.group-3 .desc ul:last-of-type li:before {
+    content: none;
+}
+.group-3 .desc ul li div:nth-child(3) {
+    color: var(--primaryColMic);
+    font-weight: bold;
+}
+
+.group-2 .desc {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.group-2 .desc ul {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.group-2 .desc ul:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 17px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primaryColMic);
+}
+.group-2 .desc ul li {
+  list-style-type: none;
+  position: relative;
+}
+.group-2 .desc ul li:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -18px;
+  height: 100px;
+  border-left: 2px solid var(--primaryColMic);
+}
+.group-2 .desc ul:last-of-type li:before {
+  content: none;
+}
+.group-2 .desc ul li div:nth-child(3) {
+  color: var(--primaryColMic);
+  font-weight: bold;
+}
