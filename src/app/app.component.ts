@@ -16,21 +16,26 @@ export class AppComponent implements AfterViewInit, DoCheck {
   menuVisibile = true;
   closed = true;
   lang: LANGUAGES;
-
+  larghezza;
   ngDoCheck(): void {
-    this.checkHeight();
+    // this.checkHeight();
   }
 
   checkHeight(): void {
-    // if (this.sideBar && this.sideBar.nativeElement.style.display !== 'none') {
-    //   if (this.sideBar.nativeElement.clientHeight > this.content.nativeElement.clientHeight) {
-    //     const px = this.sideBar.nativeElement.clientHeight + 'px';
-    //     this.content.nativeElement.style.minHeight = px;
-    //   } else if (this.sideBar.nativeElement.clientHeight < this.content.nativeElement.clientHeight) {
-    //     const px = this.content.nativeElement.clientHeight + 'px';
-    //     this.sideBar.nativeElement.style.minHeight = px;
-    //   }
-    // }
+    if (window.innerWidth !== this.larghezza) {
+      this.larghezza = window.innerWidth;
+      if (window.innerWidth < 760) {
+        this.menuVisibile = true;
+        this.closed = false;
+        // this.closeNav();
+        // this.openNav();
+      } else {
+        this.menuVisibile = false;
+        this.closed = true;
+        // this.openNav();
+      }
+    }
+
   }
 
   ngAfterViewInit(): void {
@@ -39,11 +44,11 @@ export class AppComponent implements AfterViewInit, DoCheck {
       this.menuVisibile = true;
       this.closed = false;
       // this.closeNav();
-      this.openNav();
+      // this.openNav();
     } else {
       this.menuVisibile = false;
       this.closed = true;
-      this.openNav();
+      // this.openNav();
     }
   }
 
@@ -59,6 +64,14 @@ export class AppComponent implements AfterViewInit, DoCheck {
   openNav(): void {
     this.sideBar.nativeElement.style.display = 'block';
     this.closed = false;
+  }
+
+
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationChange(event): void {
+    setTimeout(() => {
+      this.checkHeight();
+    }, 100);
   }
 
   @HostListener('window:scroll', []) onWindowScroll(): void {

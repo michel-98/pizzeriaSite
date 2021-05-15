@@ -18,6 +18,8 @@ button.btn-none-W {
   border: none;
 }
 
+
+
 button.btn-none:hover {
   text-decoration: underline;
 }
@@ -31,7 +33,12 @@ button.btn-none:hover {
 
 }
 
-.row.collapse {
+.row.collapseMic {
   margin-right: 0 !important;
   margin-left: 0 !important;
+  padding-right: 0;
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+  flex-wrap: wrap;
 }

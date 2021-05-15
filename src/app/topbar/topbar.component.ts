@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { Modello } from '../content/Modello';
 import fileContent from './../content/content.json';
 
@@ -7,10 +7,13 @@ import fileContent from './../content/content.json';
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.css']
 })
-export class TopbarComponent implements OnInit {
+export class TopbarComponent implements OnInit, DoCheck {
   modello;
   isCollapsed = false;
   constructor() { }
+  ngDoCheck(): void {
+    console.log('collassata', this.isCollapsed);
+  }
 
   ngOnInit(): void {
     this.modello = (fileContent as Modello);
