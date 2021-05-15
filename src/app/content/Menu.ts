@@ -24,5 +24,3 @@ export class Menu {
     Items: Item[];
     MenuCategories: MenuCategory[];
 }
-
-

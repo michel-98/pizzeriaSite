@@ -1,0 +1,23 @@
+<div id="topBar" #topBar class="row">
+
+  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="row">
+    <div *ngFor="let menu of modello.elementiMenu" class="col-4 row-line">
+      <button type="button" class="btn-none" id="topBar" (click)="goTo(menu.titolo)">
+        <h6>{{menu.titolo}}</h6>
+      </button>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn-none-W" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      <i class="bi bi-list" *ngIf="isCollapsed"></i>
+      <i class="bi bi-x" *ngIf="!isCollapsed"></i>
+    </button>
+<!-- 
+
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample">
+    Toggle
+  </button>
+</p> -->

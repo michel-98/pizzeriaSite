@@ -1,0 +1,37 @@
+button.btn-none {
+  color: var(--secondaryColMic);
+  background-color: initial !important;
+  border: none;
+}
+
+
+button.btn-none {
+  color: var(--secondaryColMic);
+  background-color: initial !important;
+  border: none;
+}
+
+button.btn-none-W {
+  width: 100%;
+  color: var(--secondaryColMic);
+  background-color: initial !important;
+  border: none;
+}
+
+button.btn-none:hover {
+  text-decoration: underline;
+}
+
+#separatorV {
+  border-left: 2px solid var(--secondaryColMic);
+}
+
+.row-line {
+  border-bottom: 1px solid var(--secondaryColMic);
+
+}
+
+.row.collapse {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}

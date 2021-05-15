@@ -6,13 +6,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ElementoComponent } from './content/elemento/elemento.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ContentComponent,
-    ElementoComponent
+    ElementoComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,

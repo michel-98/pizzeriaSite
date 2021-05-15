@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit, DoCheck {
   title = 'cv-angular';
   @ViewChild('mySideNav') sideBar: ElementRef;
   @ViewChild('myContent') content: ElementRef;
-
+  menuVisibile = true;
   closed = true;
   lang: LANGUAGES;
 
@@ -36,10 +36,12 @@ export class AppComponent implements AfterViewInit, DoCheck {
   ngAfterViewInit(): void {
     console.log(window.location);
     if (window.innerWidth < 760) {
+      this.menuVisibile = true;
       this.closed = false;
       // this.closeNav();
       this.openNav();
     } else {
+      this.menuVisibile = false;
       this.closed = true;
       this.openNav();
     }
