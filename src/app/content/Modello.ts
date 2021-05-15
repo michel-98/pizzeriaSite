@@ -8,7 +8,7 @@ export class Elementi {
     elemento: string;
     prezzo: string;
     moneta: string;
-    ingredienti: string[];
+    ingredienti: string;
     attributi: string[];
 }
 

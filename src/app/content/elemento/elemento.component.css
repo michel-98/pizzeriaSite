@@ -1,6 +1,7 @@
 
 .pizza{
-    border-radius: 4px;
+    min-height: 185px;
+    border-radius: 15px;
     max-width:800px;
     max-height:240px;
     box-shadow: 0 30px 40px 10px rgba(0,0,0,.2);
@@ -20,7 +21,7 @@
      
     flex:1;
     background:#fff;
-    padding:35px 30px;
+    padding:15px 15px;
     
   }
   

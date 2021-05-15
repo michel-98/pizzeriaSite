@@ -16,8 +16,5 @@ export class ElementoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  joinArray(array: []): string {
-    return array.join(', ');
-  }
 
 }
