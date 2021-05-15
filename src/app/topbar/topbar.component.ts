@@ -20,7 +20,7 @@ export class TopbarComponent implements OnInit {
     if (elemento) {
       if (document.getElementById(elemento)) {
         const scrollDiv = document.getElementById(elemento).offsetTop;
-        window.scrollTo({ top: scrollDiv - 1000, behavior: 'smooth' });
+        window.scrollTo({ top: scrollDiv - 110, behavior: 'smooth' });
       } else {
         console.error('Avvisare michele che c\'è un errore');
       }

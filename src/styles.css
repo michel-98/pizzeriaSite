@@ -8,6 +8,7 @@
 }
 app-sidebar,
 #mySideNav {
+  box-shadow: 0px 4px 25px #888,0px 4px 25px #888;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -24,8 +25,8 @@ app-sidebar,
   transition: .5s;
 }
 
-app-topbar,
-#mySideNav {
+app-topbar {
+  box-shadow:0px -4px 25px #888, 0px -4px 25px #888;
   position: fixed;
   left: 0;
   top: 0;
