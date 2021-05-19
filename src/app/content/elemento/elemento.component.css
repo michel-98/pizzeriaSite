@@ -21,13 +21,20 @@
     flex: 0 0 45%;
     
   }
+  .pizza__content_img{
+    /* background-image: url("./../../../assets/pizza.jpg"); */
+    background-size: 101%;
+    background-position: bottom;
+    background-color: #fffbe3;
+    background-repeat: no-repeat;
+  }
+
   
   .pizza__content{
     display:flex;
     flex-direction:column;
-     
+background: #fff;
     flex:1;
-    background:#fff;
     padding:15px 15px;
     
   }
@@ -98,8 +105,3 @@
     font-size:20px;
     margin-right:3px;
   }
-  
-  
-  
-  
-  

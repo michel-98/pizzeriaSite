@@ -9,6 +9,7 @@ export class Elementi {
     prezzo: string;
     moneta: string;
     ingredienti: string;
+    immagine: string;
     attributi: string[];
 }
 
